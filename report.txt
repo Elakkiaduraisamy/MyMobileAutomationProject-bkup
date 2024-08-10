@@ -1,0 +1,44 @@
+Feature: App flow testing # tests/features/login.feature:1
+
+  Scenario: Standard user login                     # tests/features/login.feature:3
+    Given the app is set up                         # tests/features/steps/login_steps.py:7
+    When the user logs in with standard credentials # tests/features/steps/login_steps.py:15
+    Then the user should be logged in successfully  # tests/features/steps/login_steps.py:21
+      Traceback (most recent call last):
+        File "/Users/venlini/Documents/elakkia/mywork/MyMobileAutomationProject-main/myvenv/lib/python3.9/site-packages/behave/model.py", line 1329, in run
+          match.run(runner.context)
+        File "/Users/venlini/Documents/elakkia/mywork/MyMobileAutomationProject-main/myvenv/lib/python3.9/site-packages/behave/matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "tests/features/steps/login_steps.py", line 25, in step_then_user_should_be_logged_in_successfully
+          assert context.login_page.is_logged_in(), "User was not logged in successfully"
+      AttributeError: 'LoginPage' object has no attribute 'is_logged_in'
+      
+      Captured stdout:
+      config loading
+      driver <appium.webdriver.webdriver.WebDriver (session="39980f23-f949-4abd-bbec-72458ad86a35")>
+      getting the title of the page
+      PRODUCTS
+      
+      Captured logging:
+      INFO:app_logger:Setting up WebDriver
+      INFO:app_logger:Configuration loaded successfully
+      WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1043c1c10>: Failed to establish a new connection: [Errno 61] Connection refused')': /status
+      WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1043c1dc0>: Failed to establish a new connection: [Errno 61] Connection refused')': /status
+      WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10443c0a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /status
+      INFO:app_logger:Appium server is running
+      INFO:app_logger:Resolved app path: /Users/venlini/Documents/elakkia/mywork/MyMobileAutomationProject/apps/iOS.Simulator.SauceLabs.Mobile.Sample.app.2.7.1.app
+      INFO:app_logger:Appium options created: <appium.options.ios.xcuitest.base.XCUITestOptions object at 0x10443c970>
+      INFO:app_logger:Connecting to Appium server at http://127.0.0.1:4723
+      INFO:app_logger:Starting login with standard credentials
+      INFO:app_logger:Trying to find element by IOS_PREDICATE: 'test-standard_user'
+      INFO:app_logger:getting the title of the page
+
+
+
+Failing scenarios:
+  tests/features/login.feature:3  Standard user login
+
+0 features passed, 1 failed, 0 skipped
+0 scenarios passed, 1 failed, 0 skipped
+2 steps passed, 1 failed, 0 skipped, 0 undefined
+Took 0m13.154s

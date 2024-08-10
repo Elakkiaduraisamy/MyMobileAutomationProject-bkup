@@ -1,0 +1,15 @@
+userName: elakkiaduraisamy_6lZMFK
+accessKey: nzs6xqzRkUfyod4F9Grd
+framework: python
+app: bs://140ab01208bba1d7c385da768fa9c3b9afb1fb44
+app1: bs://acd880e72e9988d4b6f2ac4ce8b1549e126d5b3f
+platforms:
+  - platformName: ios
+    deviceName: iPhone 15 Pro
+    platformVersion: 17
+browserstackLocal: true
+buildName: bstack-demo-sauce
+projectName: My Demo app
+buildIdentifier: ${BUILD_NUMBER}
+debug: true
+networkLogs: true

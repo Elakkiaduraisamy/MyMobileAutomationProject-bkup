@@ -1,0 +1,33 @@
+<testsuite name="product.Product Page Verification" tests="3" errors="0" failures="0" skipped="3" time="0.0" timestamp="2024-07-25T19:14:54.081374" hostname="MacBook-Pro.local"><testcase classname="product.Product Page Verification" name="standard user logs in" status="untested" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: standard user logs in
+    Given the app is set up ... untested in 0.000s
+    When the user logs in with standard credentials ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="product.Product Page Verification" name="Added product to cart" status="untested" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Added product to cart
+    Given user selects any products from the list ... untested in 0.000s
+    Then user navigates to that product page ... untested in 0.000s
+    And Verify the selected product page is displayed ... untested in 0.000s
+    And click the add to cart button ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="product.Product Page Verification" name="verifies the copyrights and social media links" status="untested" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: verifies the copyrights and social media links
+    Given user scrolls down ... untested in 0.000s
+    Then user can see the social media links and copyrights ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
